@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>header</title>
+    <!-- 引入4个文件，必须注意导入顺序-->
+    <link rel="stylesheet" href="../css/bootstrap.css"/>
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+
+    <style>
+        .col-lg-7,.col-lg-5{
+            background: #F7F7F7;
+            height: 42px;
+            padding:13px 0px;
+            padding-left: 50px;;
+            Font: 14px "Microsoft Yahei";
+        }
+        .breadcrumb {
+            background-color:  #F7F7F7;
+            padding:0;
+            margin: 0;
+        }
+        .breadcrumb-item + .breadcrumb-item::before{
+            content: "|";
+            padding:0;
+            margin: 0;
+        }
+        .a{
+            padding:0;
+            margin: 0;
+            align-items: center;
+        }
+
+        #d1{
+            background-color: transparent;
+        }
+        #d1>a{
+            trxt-align:center;
+        }
+        .table {
+            margin-bottom: 0rem;
+        }
+        #d2{
+            color:#0142fe;
+        }
+        #d3{
+            color:#727272;
+            font-size:14px;
+        }
+        .nav{
+            background-color:#0142fe;
+            width:100%;
+        }
+        .nav-link {
+            color: #fff;
+        }
+        .nav-link:hover{
+            background-color:#fff;
+            color:#0142fe;
+        }
+
+    </style>
+</head>
+
+<body>
+<!--头部开始-->
+<div class="contanier">
+    <!-- 上 -->
+    <div class="row">
+        <div class="col-lg-7">
+            <p>欢迎访问金桥物流配载网</p>
+        </div>
+        <div class="col-lg-5">
+            <!-- 面包屑导航 -->
+            <ul class="breadcrumb">
+                <li class="breadcrumb-item">
+                    <a href="#">登录</a>
+                </li>
+                <li class="breadcrumb-item">
+                    <a href="#">注册</a>
+                </li>
+                <li class="breadcrumb-item">
+                    <a href="#">公司加盟</a>
+                </li>
+                <li class="breadcrumb-item">
+                    <a href="#">帮助中心</a>
+                </li>
+                <li class="breadcrumb-item">
+                    <a href="#">加入收藏</a>
+                </li>
+                <li class="breadcrumb-item">
+                    <a href="#">微信公众号</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- 中 -->
+    <div class="row">
+        <!-- 中左 -->
+        <div class="col-lg-4 col-sm-12">
+            <!-- 一个一行二列的表格-->
+            <table id="d1" class="table">
+                <tr>
+                    <td style = "text-align:right"><a><img style="margin-right:10px" src="pic/logo02.png" alt=""></a>
+                        <div style="float:right;width:2px;height:50px;background:#727272;"></div></td>
+                    <td>
+                        <p>金桥物流配载<br>线上线下一站式服务</p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <!-- 中中 -->
+        <div class="col-lg-4 col-sm-12">
+            <!-- 用表格写吧-->
+            <table>
+                <tr>
+                    <td collapse="2"><a href="">找货源：</a></td>
+                    <td></td>
+                    <td><a href="">找路线： </a></td>
+                    <td collapse="3"></td>
+                </tr>
+                <tr>
+                    <td collapse="2">
+                        <select name="" id="">
+                            <option value="">出发地</option>
+                            <option value="">北京</option>
+                            <option value="">上海</option>
+                            <option value="">广州</option>
+                            <option value="">深圳</option>
+                            <option value="">西安</option>
+                        </select>
+                    </td>
+                   
+                    <td><img src="pic/sousuo.png" alt="#"/></td>
+                    <td collapse="2">
+                        <select name="" id="">
+                            <option value="">收货地</option>
+                            <option value="">北京</option>
+                            <option value="">上海</option>
+                            <option value="">广州</option>
+                            <option value="">深圳</option>
+                            <option value="">西安</option>
+                        </select>
+                    </td>
+
+                    <td> <button>开始搜索</button></td>
+                </tr>
+            </table>
+        </div>
+        <!-- 中右 -->
+        <div class="col-lg-4 col-sm-12">
+            <table>
+                <tr>
+                    <td  collapse="2"><p id="d2"><img src="pic/dianhua.jpg" alt="">09136711957</p></td>
+
+                </tr>
+                <tr>
+                    <td collapse="2"><p id="d3">全国24小时统一热线</p></td>
+
+                </tr>
+            </table>
+    </div>
+    <!-- 下 -->
+    <!--两行水平导航 -->
+    <ul class="nav justify-content-around nav-justified nav-tabs nav-pills">
+        <li class="nav-item"><a class="nav-link" href="#">渭南到杭州</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">澄城到杭州</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">西安到杭州</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">蒲城到杭州</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">大荔到杭州</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">澄城到广州</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">西安到东莞</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">西安到上海</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">渭南到北京</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">渭南到深圳</a></li>
+    </ul>
+    <ul class="nav justify-content-around nav-justified nav-tabs">
+        <li class="nav-item"><a class="nav-link" href="#">渭南到杭州</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">澄城到杭州</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">西安到杭州</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">蒲城到杭州</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">大荔到杭州</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">澄城到广州</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">西安到东莞</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">西安到上海</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">渭南到北京</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">澄城到深圳</a></li>
+    </ul>            
+<!--头部结束-->
+</div>   
+</body>
+</html>
